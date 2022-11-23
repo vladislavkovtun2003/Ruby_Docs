@@ -15,8 +15,6 @@ namespace Ruby_Docs
         public Auth()
         {
             InitializeComponent();
-            this.textBoxUsername.Text = "admin";
-            this.textBoxPassword.Text = "admin";
         }
 
         private void btnAuth_Click(object sender, EventArgs e)

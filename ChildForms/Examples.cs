@@ -309,10 +309,10 @@ namespace Ruby_Docs
                 //Show Edit Submit Button
                 btnSubmitEdit.Visible = true;
             }
-            catch (Exception E)
+            catch (Exception)
             {
                 panelAdminForms.Visible = false;
-                MessageBox.Show("Оберіть елемент для редагування!" + E.Message);
+                MessageBox.Show("Оберіть елемент для редагування!");
             }
         }
 
