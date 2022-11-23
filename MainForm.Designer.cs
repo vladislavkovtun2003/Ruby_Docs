@@ -42,9 +42,11 @@ namespace Ruby_Docs
             this.btnCloseChildForm = new System.Windows.Forms.Button();
             this.labelTop = new System.Windows.Forms.Label();
             this.panelOpenChildForm = new System.Windows.Forms.Panel();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             this.panelTop.SuspendLayout();
+            this.panelOpenChildForm.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -191,11 +193,25 @@ namespace Ruby_Docs
             // 
             // panelOpenChildForm
             // 
+            this.panelOpenChildForm.Controls.Add(this.richTextBox1);
             this.panelOpenChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelOpenChildForm.Location = new System.Drawing.Point(200, 75);
             this.panelOpenChildForm.Name = "panelOpenChildForm";
             this.panelOpenChildForm.Size = new System.Drawing.Size(984, 586);
             this.panelOpenChildForm.TabIndex = 2;
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.AcceptsTab = true;
+            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.richTextBox1.Location = new System.Drawing.Point(0, 0);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.ReadOnly = true;
+            this.richTextBox1.Size = new System.Drawing.Size(984, 586);
+            this.richTextBox1.TabIndex = 0;
+            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
             // 
             // MainForm
             // 
@@ -216,6 +232,7 @@ namespace Ruby_Docs
             this.panelLogo.PerformLayout();
             this.panelTop.ResumeLayout(false);
             this.panelTop.PerformLayout();
+            this.panelOpenChildForm.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -234,5 +251,6 @@ namespace Ruby_Docs
         private System.Windows.Forms.Panel panelOpenChildForm;
         private System.Windows.Forms.Button btnExample;
         private System.Windows.Forms.Button btnGlobalSearch;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }
